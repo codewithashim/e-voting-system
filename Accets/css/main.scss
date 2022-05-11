@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: rgb(250, 250, 250);
+}
+
+#mainHeader {
+  padding: 0.5rem;
+  width: 100%;
+  height: 10vh;
+  background: #f0f0f0;
+  position: sticky;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+  @media (max-width: 450px) {
+    width: 100%;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 1.8rem;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      font-size: 1.5rem;
+    }
+    
+    span {
+      color: #00b4d8;
+      cursor: pointer;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+
+  a {
+    text-align: center;
+    color: gray;
+  }
+}
+
+.registerSection {
+  margin-top: -3rem;
+}
+
+#loginSection,
+#registerSection {
+  width: 100%;
+
+  .container {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 0 auto;
+    gap: 3rem !important;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    .leftContent {
+      width: 40%;
+      padding-left: 2%;
+
+      .login_img {
+        width: 80%;
+      }
+
+      img {
+        margin-top: 5rem;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .rightContent {
+      width: 60%;
+      margin-top: 5rem;
+
+      form {
+        input {
+          width: 60%;
+          padding: 0.6rem;
+          margin: 0.6rem auto;
+        }
+
+        .voter_opction {
+          width: 60%;
+          padding: 0.6rem;
+        }
+
+        .register_btn {
+          margin-top: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #mainHeader {
+    h1 {
+      font-size: 1.3rem;
+    }
+  }
+
+  .container {
+    display: block;
+    width: 100%;
+    padding: 0;
+    gap: 0;
+
+    .leftContent {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -2rem;
+
+      img {
+        width: 200% !important;
+      }
+    }
+
+    .rightContent {
+      margin-top: -1rem !important;
+      form {
+        width: 100%;
+        margin: 0 auto;
+
+        input {
+          margin: 0.5rem auto !important;
+          padding: 0.5rem !important;
+          width: 100% !important;
+          font-size: 1rem !important;
+        }
+
+        .voter_opction {
+          width: 100% !important;
+          padding: 0.5rem;
+        }
+
+        .register_btn {
+          text-align: center;
+          margin-top: 0.7rem;
+
+          span {
+            font-size: 1rem;
+            padding: 0.6rem;
+            a {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  #mainHeader {
+    width: 100% !important;
+    h1 {
+      font-size: 1rem;
+    }
+  }
+  .leftContent {
+    margin-top: -3rem !important;
+  }
+
+  .rightContent {
+    margin-top: -1rem !important;
+
+    form {
+      width: 100%;
+      margin: 0 auto;
+
+      input {
+        margin: 0.4rem auto !important;
+        padding: 0.2rem !important;
+        width: 100% !important;
+        font-size: 0.6rem !important;
+      }
+
+      .voter_opction {
+        width: 100%;
+        padding: 0.2rem;
+      }
+
+      .register_btn {
+        text-align: center;
+        margin-top: 0.7rem;
+
+        span {
+          font-size: 0.8rem;
+
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    padding: 1.2rem;
+    text-align: center;
+
+    a {
+      color: gray !important;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+// ============= deashboard design ===============
+
+.common_btn {
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  padding: 0.5rem 2rem;
+  transition: 0.6s;
+  cursor: pointer;
+
+  &:hover {
+    background: rgb(127, 163, 241);
+    // border: 1px solid grey;
+    color: #f0f0f0;
+  }
+}
+
+#main_page {
+  width: 100%;
+
+  .btn_content {
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+//===================== user and grup style ======================
+
+#user_grup {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+
+  // footer{
+
+  // }
+
+  .user_grup_container {
+    display: flex;
+    justify-content: safe;
+    column-gap: 10rem;
+    align-items: center;
+
+    .grup_section {
+      width: 60%;
+      .grup_img_part {
+        padding: 0.6rem 0rem;
+        width: 50%;
+        height: 50%;
+
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .grup_name {
+        h3 {
+          padding: 0.3rem 0;
+          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+        }
+      }
+
+      .line {
+        margin-top: 0.6rem;
+        margin-bottom: 0.6rem;
+        background: whitesmoke;
+        width: 25rem !important;
+      }
+    }
+
+    .user_section {
+      width: 40%;
+
+      .user_profile {
+        padding: 0.6rem 0rem;
+        width: 50%;
+        height: 50%;
+
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .user_details {
+        h3 {
+          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+          color: #0b0909;
+          padding: 0.2rem 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #user_grup {
+    padding-left: 5%;
+    padding-right: 5%;
+
+    .user_grup_container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+header{
+  width: 100% !important;
+}
+
+  #user_grup {
+    padding-left: 5%;
+    padding-right: 5%;
+
+    .user_grup_container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  }
+}
+
+.vote_btn{
+  border: none !important;
+  outline: none !important;
+  border-radius: 0.3rem !important;
+  padding: 0.5rem 2rem !important;
+  transition: 0.6s !important;
+  cursor: pointer !important;
+
+  &:hover {
+    background: rgb(127, 163, 241);
+    // border: 1px solid grey;
+    color: #f0f0f0;
+  }
+}
+
+.voted{
+  background: green !important;
+}
+
+.vote{
+  background: rgb(250, 106, 16) !important;
+}

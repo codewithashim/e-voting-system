@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: #fafafa;
+}
+
+#mainHeader {
+  padding: 0.5rem;
+  width: 100%;
+  height: 10vh;
+  background: #f0f0f0;
+  position: -webkit-sticky;
+  position: sticky;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  #mainHeader {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  #mainHeader {
+    width: 100%;
+  }
+}
+
+#mainHeader h1 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+  #mainHeader h1 {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+}
+
+#mainHeader h1 span {
+  color: #00b4d8;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+footer a {
+  text-align: center;
+  color: gray;
+}
+
+.registerSection {
+  margin-top: -3rem;
+}
+
+#loginSection,
+#registerSection {
+  width: 100%;
+}
+
+#loginSection .container,
+#registerSection .container {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin: 0 auto;
+  gap: 3rem !important;
+}
+
+@media (max-width: 768px) {
+  #loginSection .container,
+  #registerSection .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#loginSection .container .leftContent,
+#registerSection .container .leftContent {
+  width: 40%;
+  padding-left: 2%;
+}
+
+#loginSection .container .leftContent .login_img,
+#registerSection .container .leftContent .login_img {
+  width: 80%;
+}
+
+#loginSection .container .leftContent img,
+#registerSection .container .leftContent img {
+  margin-top: 5rem;
+  width: 100%;
+  height: auto;
+}
+
+#loginSection .container .rightContent,
+#registerSection .container .rightContent {
+  width: 60%;
+  margin-top: 5rem;
+}
+
+#loginSection .container .rightContent form input,
+#registerSection .container .rightContent form input {
+  width: 60%;
+  padding: 0.6rem;
+  margin: 0.6rem auto;
+}
+
+#loginSection .container .rightContent form .voter_opction,
+#registerSection .container .rightContent form .voter_opction {
+  width: 60%;
+  padding: 0.6rem;
+}
+
+#loginSection .container .rightContent form .register_btn,
+#registerSection .container .rightContent form .register_btn {
+  margin-top: 1.4rem;
+}
+
+@media (max-width: 768px) {
+  #mainHeader h1 {
+    font-size: 1.3rem;
+  }
+  .container {
+    display: block;
+    width: 100%;
+    padding: 0;
+    gap: 0;
+  }
+  .container .leftContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: -2rem;
+  }
+  .container .leftContent img {
+    width: 200% !important;
+  }
+  .container .rightContent {
+    margin-top: -1rem !important;
+  }
+  .container .rightContent form {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .container .rightContent form input {
+    margin: 0.5rem auto !important;
+    padding: 0.5rem !important;
+    width: 100% !important;
+    font-size: 1rem !important;
+  }
+  .container .rightContent form .voter_opction {
+    width: 100% !important;
+    padding: 0.5rem;
+  }
+  .container .rightContent form .register_btn {
+    text-align: center;
+    margin-top: 0.7rem;
+  }
+  .container .rightContent form .register_btn span {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+  .container .rightContent form .register_btn span a {
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 350px) {
+  #mainHeader {
+    width: 100% !important;
+  }
+  #mainHeader h1 {
+    font-size: 1rem;
+  }
+  .leftContent {
+    margin-top: -3rem !important;
+  }
+  .rightContent {
+    margin-top: -1rem !important;
+  }
+  .rightContent form {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .rightContent form input {
+    margin: 0.4rem auto !important;
+    padding: 0.2rem !important;
+    width: 100% !important;
+    font-size: 0.6rem !important;
+  }
+  .rightContent form .voter_opction {
+    width: 100%;
+    padding: 0.2rem;
+  }
+  .rightContent form .register_btn {
+    text-align: center;
+    margin-top: 0.7rem;
+  }
+  .rightContent form .register_btn span {
+    font-size: 0.8rem;
+  }
+  .rightContent form .register_btn span a {
+    text-decoration: none;
+  }
+  footer {
+    padding: 1.2rem;
+    text-align: center;
+  }
+  footer a {
+    color: gray !important;
+    font-size: 0.9rem;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.common_btn {
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  padding: 0.5rem 2rem;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.common_btn:hover {
+  background: #7fa3f1;
+  color: #f0f0f0;
+}
+
+#main_page {
+  width: 100%;
+}
+
+#main_page .btn_content {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+#user_grup {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#user_grup .user_grup_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: safe;
+      -ms-flex-pack: safe;
+          justify-content: safe;
+  -webkit-column-gap: 10rem;
+          column-gap: 10rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#user_grup .user_grup_container .grup_section {
+  width: 60%;
+}
+
+#user_grup .user_grup_container .grup_section .grup_img_part {
+  padding: 0.6rem 0rem;
+  width: 50%;
+  height: 50%;
+}
+
+#user_grup .user_grup_container .grup_section .grup_img_part img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+#user_grup .user_grup_container .grup_section .grup_name h3 {
+  padding: 0.3rem 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#user_grup .user_grup_container .grup_section .line {
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+  background: whitesmoke;
+  width: 25rem !important;
+}
+
+#user_grup .user_grup_container .user_section {
+  width: 40%;
+}
+
+#user_grup .user_grup_container .user_section .user_profile {
+  padding: 0.6rem 0rem;
+  width: 50%;
+  height: 50%;
+}
+
+#user_grup .user_grup_container .user_section .user_profile img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+#user_grup .user_grup_container .user_section .user_details h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #0b0909;
+  padding: 0.2rem 0;
+}
+
+@media (max-width: 768px) {
+  #user_grup {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #user_grup .user_grup_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  header {
+    width: 100% !important;
+  }
+  #user_grup {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #user_grup .user_grup_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+.vote_btn {
+  border: none !important;
+  outline: none !important;
+  border-radius: 0.3rem !important;
+  padding: 0.5rem 2rem !important;
+  -webkit-transition: 0.6s !important;
+  transition: 0.6s !important;
+  cursor: pointer !important;
+}
+
+.vote_btn:hover {
+  background: #7fa3f1;
+  color: #f0f0f0;
+}
+
+.voted {
+  background: green !important;
+}
+
+.vote {
+  background: #fa6a10 !important;
+}
+/*# sourceMappingURL=main.css.map */
